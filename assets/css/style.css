@@ -4,7 +4,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #F5F7FA; /* Màu nền */
+    background-color: #F5F7FA;
 }
 .admin {
     background-color: #F5F7FA;
@@ -130,4 +130,11 @@ html, body {
 }
 .nav-link:hover {
     color: #6366f1;
+}
+.add-product {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

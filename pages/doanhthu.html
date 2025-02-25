@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="d-flex">
+    <div class="admin d-flex">
         <!-- Sidebar -->
         <!-- Sidebar (Menu trái) -->
         <nav class="admin-menu d-flex flex-column align-items-center">
@@ -28,9 +28,19 @@
                 <li class="nav-item">
                     <a class="nav-link menu-item" href="/pages/danhmuc.html">Quản lý danh mục</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/sanpham.html">Quản lý sản phẩm</a>
-                </li>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#menuProducts">
+                            <span><i class="bi bi-box-seam"></i> Sản phẩm</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="collapse list-unstyled ms-4" id="menuProducts">
+                            <li><a class="nav-link" href="/pages/sanpham.html">Products</a></li>
+                            <li><a class="nav-link" href="/pages/danhmuc.html">Danh mục sản phẩm</a></li>
+                            <li><a class="nav-link" href="/pages/themsanpham.html">Thêm sản phẩm</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 <li class="nav-item">
                     <a class="nav-link menu-item" href="/pages/donhang.html">Quản lý đơn hàng</a>
                 </li>
