@@ -96,10 +96,86 @@
             </nav>
 
             <!-- Nội dung chính của trang sẽ nằm ở đây -->
-            <div class="p-4">
-                <h1>Chào mừng đến với trang Admin</h1>
-                <p>Quản lý hệ thống một cách dễ dàng.</p>
+            <div class="container">
+                <h4 class="fw-bold mt-4">Thêm sản phẩm</h4>
+                <p><a href="/">Trang chủ</a> / <span class="text-primary">Thêm sản phẩm</span></p>
+                <div class="add-product">
+                    <div class="row">
+                        <!-- Thông tin sản phẩm -->
+                        <div class="col-md-8">
+                            <div class="border rounded p-3">
+                                <h5 class="fw-bold">Thông tin sản phẩm</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Tên sản phẩm</label>
+                                        <input type="text" class="form-control" placeholder="Nhập tại đây">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Giá sản phẩm</label>
+                                        <input type="number" class="form-control" placeholder="Nhập tại đây">
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <label class="form-label">Giá khuyến mãi</label>
+                                        <input type="number" class="form-control" placeholder="Nhập tại đây">
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <label class="form-label">Giới thiệu</label>
+                                        <input type="text" class="form-control" placeholder="Nhập tại đây">
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <label class="form-label">Danh mục</label>
+                                        <input type="text" class="form-control" placeholder="Nhập tại đây">
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <label class="form-label">Thương hiệu</label>
+                                        <input type="text" class="form-control" placeholder="Nhập tại đây">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Loại / Danh mục -->
+                        <div class="col-md-4">
+                            <div class="border rounded p-3">
+                                <h5 class="fw-bold">Loại / Danh mục</h5>
+                                <div class="mb-3">
+                                    <label class="form-label">Thêm danh mục</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Nhập tại đây">
+                                        <button class="btn btn-success">Add</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Thêm thương hiệu</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Nhập tại đây">
+                                        <button class="btn btn-success">Add</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Thêm màu</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Nhập tại đây">
+                                        <button class="btn btn-success">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image Upload -->
+                    <div class="border rounded p-4 text-center mt-2">
+                        <i class="bi bi-image" style="font-size: 60px; color: #ccc;"></i>
+                        <p class="text-muted">Image Upload</p>
+                    </div>
+            
+                    <!-- Buttons -->
+                    <div class="d-flex justify-content-end mt-2">
+                        <button class="btn btn-primary me-2">Đăng sản phẩm</button>
+                        <button class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
             </div>
+            
         </div>
     </div>
 
