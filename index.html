@@ -1,59 +1,62 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trang chủ | Admin</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="d-flex">
+    <div class="admin d-flex">
         <!-- Sidebar -->
-<!-- Sidebar (Menu trái) -->
-<nav class="admin-menu d-flex flex-column align-items-center">
-    <!-- Logo -->
-    <a href="#" class="navbar-logo mb-3">
-        <img src="./assets/img/logo.png" alt="logo">
-    </a>
-    
-    <!-- Menu -->
-    <ul class="nav flex-column w-100">
-        <li class="nav-item">
-            <a class="nav-link menu-item active" href="/">Trang chủ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/danhmuc.html">Quản lý danh mục</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/sanpham.html">Quản lý sản phẩm</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/donhang.html">Quản lý đơn hàng</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/khachhang.html">Quản lý khách hàng</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/nhanvien.html">Quản lý nhân viên</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/binhluan.html">Quản lý bình luận</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/danhgia.html">Quản lý đánh giá</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/tintuc.html">Quản lý tin tức</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/khuyenmai.html">Quản lý khuyến mãi</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link menu-item" href="./pages/doanhthu.html">Quản lý doanh thu</a>
-        </li>
-    </ul>
-</nav>
+        <!-- Sidebar (Menu trái) -->
+        <nav class="admin-menu d-flex flex-column align-items-center">
+            <!-- Logo -->
+            <a href="#" class="navbar-logo mb-3">
+                <img src="./assets/img/logo.png" alt="logo">
+            </a>
+
+            <!-- Menu -->
+            <ul class="nav flex-column w-100">
+                <li class="nav-item">
+                    <a class="nav-link menu-item active" href="/">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/danhmuc.html">Quản lý danh mục</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/sanpham.html">Quản lý sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/donhang.html">Quản lý đơn hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/khachhang.html">Quản lý khách hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/nhanvien.html">Quản lý nhân viên</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/binhluan.html">Quản lý bình luận</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/danhgia.html">Quản lý đánh giá</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/tintuc.html">Quản lý tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/khuyenmai.html">Quản lý khuyến mãi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="./pages/doanhthu.html">Quản lý doanh thu</a>
+                </li>
+            </ul>
+        </nav>
 
 
         <!-- Nội dung chính -->
@@ -69,8 +72,10 @@
 
                     <!-- Avatar với dropdown -->
                     <div class="dropdown ms-3">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="40" height="40">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="40"
+                                height="40">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#">Đơn hàng của tôi</a></li>
@@ -79,28 +84,134 @@
                     </div>
                 </div>
             </nav>
-
-            <!-- Nội dung chính của trang sẽ nằm ở đây -->
-            <div class="p-4">
-                <h1>Chào mừng đến với trang Admin</h1>
-                <p>Quản lý hệ thống một cách dễ dàng.</p>
+            <div class="container">
+                <div class="oder-list mt-4">
+                    <h4 class="fw-bold">DANH SÁCH ĐƠN HÀNG</h4>
+                    <div class="table-responsive border-1">
+                        <table class="table table-hover align-middle">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th>ID đơn hàng</th>
+                                    <th>Tên Khách Hàng</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Giá trị</th>
+                                    <th>Loại sản phẩm</th>
+                                    <th>Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1234</td>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="avatar" class="avatar">
+                                        Username
+                                    </td>
+                                    <td>
+                                        Product name
+                                    </td>
+                                    <td>999.999 vnđ</td>
+                                    <td>Kính thiên văn</td>
+                                    <td><span class="badge bg-danger bg-opacity-10 text-danger p-3">Hủy</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#1234</td>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="avatar" class="avatar">
+                                        Username
+                                    </td>
+                                    <td>
+                                        Product name
+                                    </td>
+                                    <td>999.999 vnđ</td>
+                                    <td>Kính thiên văn</td>
+                                    <td><span class="badge bg-success bg-opacity-10 text-success p-3">Đã giao</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#1234</td>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="avatar" class="avatar">
+                                        Username
+                                    </td>
+                                    <td>
+                                        Product name
+                                    </td>
+                                    <td>999.999 vnđ</td>
+                                    <td>Kính thiên văn</td>
+                                    <td><span class="badge bg-primary bg-opacity-10 text-primary p-3">Đang giao</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#1234</td>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="avatar" class="avatar">
+                                        Username
+                                    </td>
+                                    <td>
+                                        Product name
+                                    </td>
+                                    <td>999.999 vnđ</td>
+                                    <td>Kính thiên văn</td>
+                                    <td><span class="badge bg-primary bg-opacity-10 text-primary p-3">Đang giao</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="best-seller mt-4">
+                    <h4 class="fw-bold">Sản phẩm bán chạy</h4>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-card">
+                                <img src="./assets/img/product-1.png" class="product-img img-fluid" alt="Sản phẩm">
+                                <div class="product-name">Kính thiên văn Skywatcher</div>
+                                <div class="product-price">31.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-card">
+                                <img src="./assets/img/product-2.png" class="product-img img-fluid" alt="Sản phẩm">
+                                <div class="product-name">Kính thiên văn Meade</div>
+                                <div class="product-price">1.500.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-card">
+                                <img src="./assets/img/product-3.png" class="product-img img-fluid" alt="Sản phẩm">
+                                <div class="product-name">Kính thiên văn Polaris</div>
+                                <div class="product-price">8.000.000 đ</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-card">
+                                <img src="./assets/img/product-4.png" class="product-img img-fluid" alt="Sản phẩm">
+                                <div class="product-name">Ống nhòm Apollo 10x50</div>
+                                <div class="product-price">2.850.000 đ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- JavaScript -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             let menuItems = document.querySelectorAll(".menu-item");
 
             menuItems.forEach(item => {
-                item.addEventListener("click", function() {
+                item.addEventListener("click", function () {
                     menuItems.forEach(i => i.classList.remove("active"));
                     this.classList.add("active");
                 });
             });
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
