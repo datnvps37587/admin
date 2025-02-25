@@ -15,8 +15,9 @@ html, body {
     border-right: 1px solid #dee2e6;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Căn giữa logo */
+    align-items: center; 
     padding-top: 20px;
+    padding-right: 10px;
 }
 
 .navbar-logo img {
