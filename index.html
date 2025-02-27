@@ -19,18 +19,22 @@
             <a href="#" class="navbar-logo mb-3">
                 <img src="/assets/img/logo.png" alt="logo">
             </a>
+            <button class="btn btn-outline-primary d-lg-none me-3" id="toggle-menu">
+                <i class="bi bi-list"></i>
+            </button>
 
             <!-- Menu -->
             <ul class="nav flex-column w-100">
                 <li class="nav-item">
-                    <a class="nav-link menu-item active" href="/admin">Trang chủ</a>
+                    <a class="nav-link menu-item active" href="/"><i class="bi bi-menu-button"></i> Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/danhmuc.html">Quản lý danh mục</a>
+                    <a class="nav-link menu-item" href="/pages/danhmuc.html"><i class="bi bi-list"></i> Quản lý danh mục</a>
                 </li>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#menuProducts">
+                        <a class="nav-link d-flex align-items-center justify-content-between" data-bs-toggle="collapse"
+                            href="#menuProducts">
                             <span><i class="bi bi-box-seam"></i> Sản phẩm</span>
                             <i class="bi bi-chevron-down"></i>
                         </a>
@@ -42,28 +46,28 @@
                     </li>
                 </ul>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/donhang.html">Quản lý đơn hàng</a>
+                    <a class="nav-link menu-item" href="/pages/donhang.html"><i class="bi bi-bag-heart"></i> Quản lý đơn hàng</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/khachhang.html">Quản lý khách hàng</a>
+                    <a class="nav-link menu-item" href="/pages/khachhang.html"><i class="bi bi-person"></i> Quản lý khách hàng</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/nhanvien.html">Quản lý nhân viên</a>
+                    <a class="nav-link menu-item" href="/pages/nhanvien.html"><i class="bi bi-person-workspace"></i> Quản lý nhân viên</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/binhluan.html">Quản lý bình luận</a>
+                    <a class="nav-link menu-item" href="/pages/binhluan.html"><i class="bi bi-chat-left-text"></i> Quản lý bình luận</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/danhgia.html">Quản lý đánh giá</a>
+                    <a class="nav-link menu-item" href="/pages/danhgia.html"><i class="bi bi-star"></i> Quản lý đánh giá</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/tintuc.html">Quản lý tin tức</a>
+                    <a class="nav-link menu-item" href="/pages/tintuc.html"><i class="bi bi-sticky"></i> Quản lý tin tức</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/khuyenmai.html">Quản lý khuyến mãi</a>
+                    <a class="nav-link menu-item" href="/pages/khuyenmai.html"><i class="bi bi-cash-coin"></i> Quản lý khuyến mãi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="/pages/doanhthu.html">Quản lý doanh thu</a>
+                    <a class="nav-link menu-item" href="/pages/doanhthu.html"><i class="bi bi-wallet"></i> Quản lý doanh thu</a>
                 </li>
             </ul>
         </nav>
@@ -75,26 +79,100 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-4 py-2">
                 <div class="container-fluid">
                     <!-- Ô tìm kiếm -->
-                    <form class="d-flex ms-auto">
-                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Tìm</button>
-                    </form>
+                    <div class="position-relative">
+                        <input class="form-control search-box" type="search" placeholder="Search">
+                        <i class="bi bi-search search-icon"></i>
+                    </div>
 
-                    <!-- Avatar với dropdown -->
-                    <div class="dropdown ms-3">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="40"
-                                height="40">
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
-                            <li><a class="dropdown-item text-danger" href="#">Đăng xuất</a></li>
-                        </ul>
+                    <!-- Các icon chức năng -->
+                    <div class="d-flex align-items-center ms-auto">
+                        <i class="bi bi-moon me-3"></i>
+                        <i class="bi bi-fullscreen me-3"></i>
+                        <i class="bi bi-chat-dots me-3 position-relative">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"></span>
+                        </i>
+                        <i class="bi bi-bell position-relative me-3">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">4</span>
+                        </i>
+
+                        <!-- Avatar với dropdown -->
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                <img src="/assets/img/avatar.png" alt="Avatar" class="rounded-circle me-2" width="40"
+                                    height="40">
+                                <div>
+                                    <span class="fw-bold">Anthony</span>
+                                    <small class="d-block text-muted">USA</small>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Đăng xuất</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
+
             <div class="container">
+                <div class="card-info mt-4">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-3">
+                            <div class="card shadow-sm p-3 text-center">
+                                <div class="icon bg-light-green">
+                                    <i class="bi bi-cash-coin"></i>
+                                </div>
+                                <p class="text-muted">Doanh thu</p>
+                                <h4>654.120.121đ</h4>
+                                <p class="text-success"><i class="bi bi-arrow-up"></i> +16%</p>
+                                <a href="#" class="details">Xem chi tiết</a>
+                            </div>
+                        </div>
+                
+                        <!-- Card 2 -->
+                        <div class="col-md-3">
+                            <div class="card shadow-sm p-3 text-center">
+                                <div class="icon bg-light-red">
+                                    <i class="bi bi-check"></i>
+                                </div>
+                                <p class="text-muted">Tổng đơn hàng</p>
+                                <h4>129</h4>
+                                <p class="text-danger"><i class="bi bi-arrow-down"></i> +80%</p>
+                                <a href="#" class="details">Xem chi tiết</a>
+                            </div>
+                        </div>
+                
+                        <!-- Card 3 -->
+                        <div class="col-md-3">
+                            <div class="card shadow-sm p-3 text-center">
+                                <div class="icon bg-light-blue">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <p class="text-muted">Lượt xem website</p>
+                                <h4>987M</h4>
+                                <p class="text-primary"><i class="bi bi-arrow-up"></i> +80%</p>
+                                <a href="#" class="details">Xem chi tiết</a>
+                            </div>
+                        </div>
+                
+                        <!-- Card 4 -->
+                        <div class="col-md-3">
+                            <div class="card shadow-sm p-3 text-center">
+                                <div class="icon bg-light-yellow">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <p class="text-muted">Tổng khách hàng</p>
+                                <h4>808</h4>
+                                <p class="text-warning"><i class="bi bi-arrow-up"></i> +13%</p>
+                                <a href="#" class="details">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
                 <div class="oder-list mt-4">
                     <h4 class="fw-bold">DANH SÁCH ĐƠN HÀNG</h4>
                     <div class="table-responsive border-1">
